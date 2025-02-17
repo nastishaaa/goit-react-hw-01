@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: true,
-  }
+  },
+css: {
+    modules: {
+      scopeBehaviour: 'local', // Це поведінка за замовчуванням, але перевірка не завадить
+    }
+  }
 });
