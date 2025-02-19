@@ -7,20 +7,18 @@ import FriendList from './components/FriendList';
 import transactions from './transactions.json';
 import TransactionHistory from './components/TransactionHistory';
 
-
 function App() {
-
   return (
     <>
-    
-      <Profile username={userData.username}
+      <Profile name={userData.username}
         tag={userData.tag}
         location={userData.location}
-        avatar={userData.avatar}
+        image={userData.avatar}
         stats={userData.stats}
         />
         
-        <FriendList friends={friends}/>
+        <FriendList friends={friends} />
+          
         <TransactionHistory items={transactions} />
     </>
   )
