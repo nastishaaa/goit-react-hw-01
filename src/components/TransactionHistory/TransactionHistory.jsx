@@ -12,9 +12,7 @@ export default function TransactionHistory({items}) {
         <td>{item.amount}</td>
         <td>{item.currency}</td>
     </tr>
-
-        
-    )
+    );
     return (<table className={css.table}>
         <thead className={css.thead}> 
                 <tr>
